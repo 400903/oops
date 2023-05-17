@@ -1,0 +1,120 @@
+# oops
+
+#class
+
+class classname:
+    x=70
+    def sample(self):
+        print("display method")
+    print(x)    
+
+#object
+
+class demo:
+    x=10
+    def sample(self):
+        print("disply rahul")
+obj= demo()
+obj.sample()   
+print(obj.x)    
+
+#object
+
+class Civil:
+    print("gurunanak students")
+    def royal(self):
+        x=20
+        y=30
+        print(x,y)
+obj=Civil()
+obj.royal() 
+
+
+#object variavble call
+
+class Civil:
+    k=44
+    def royal(self):
+        x=20
+        y=30
+        print(x,y)
+obj=Civil()
+obj.royal()
+print(obj.k)# with above example only
+
+'''gurunanak students
+20 30
+20 30
+44'''
+
+#init constructor
+
+class Mobile:
+    x="korra"
+    def __init__(self,Brand,Battery,Price,Ram,camera):
+        self.brand=Brand
+        self.battery=Battery
+        self.price=Price
+        self.ram=Ram
+        self.camera=camera
+    def display(self):
+        print('brand:',self.brand) 
+        print('battery:',self.battery)  
+        print('price:',self.price)  
+        print('ram:',self.ram)  
+        print('camera:',self.camera)    
+        print("_______________") 
+       #print(self.brand,self.battery,self.price,self.ram,self.camera)
+obj=Mobile("apple","3000mah",200000,"4gb","12mp") #accessing calss name
+obj.display()#accessing method or function
+print(obj.x)#accessing variables
+
+#one class multiple objects we create as folloow below
+obj1=Mobile("poco","3000mah",20000,"6gb","12mp")
+obj1.display()
+
+
+#bankaccount
+
+class Bankaccount:
+    def __init__(self,bank_accountno,bank_branch,bank_ifsccode,bank_balance):
+        self.bank_accountno=bank_accountno
+        self.bank_branch=bank_branch
+        self.bank_ifsccode=bank_ifsccode
+        self.bank_balance=bank_balance
+    def display(self):
+        print(self.bank_accountno,self.bank_branch,self.bank_ifsccode,self.bank_balance)
+
+print("bank_accountno,\t bank_branch,\t bank_ifsccode \tbank_balance")     
+
+obj=Bankaccount("111401532","hyderabad","icic000678",10000)  
+obj.display()
+
+obj2=Bankaccount("222401532","chennai","sbin000678",4000)       
+obj2.display()
+
+
+
+#obj2.display()
+        
+
+
+#obj=Bankaccount("111401532","hyderabad","icic000678",10000)        
+#obj.display()
+
+#obj2=Bankaccount("222401532","chennai","sbin000678",4000) 
+#obj2.display()
+class Bankaccount:
+    def __init__(self,bank_accountno,bank_branch,bank_ifsccode,bank_balance):
+        self.bank_accountno=bank_accountno
+        self.bank_branch=bank_branch
+        self.bank_ifsccode=bank_ifsccode
+        self.bank_balance=bank_balance
+    def display(self):
+        print(self.bank_accountno,self.bank_branch,self.bank_ifsccode,self.bank_balance)
+
+print("bank_accountno,\t bank_branch,\t bank_ifsccode \tbank_balance")     
+
+obj=Bankaccount("111401532","hyderabad","icic000678",10000)  
+print(obj.bank_branch)
+print(obj.bank_balance)# just we are one attribute here obj.instance variable
